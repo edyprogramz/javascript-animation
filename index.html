@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-page">
+        <!-- 1 -->
+        <div class="nav-bar">
+            <img src="images/name.jpeg" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 2 -->
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/phone.jpg" alt="" id="phone">
+            <div class="circle" id="circle">
+                <div class="feature one">
+                    <img src="images/display.png" alt="">
+                    <div>
+                        <h3>Display</h3>
+                        <p>5.8" sreen-resolution</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/battery.png" alt="">
+                    <div>
+                        <h3>Battery Life</h3>
+                        <p>5500AmH 48hrs standby</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/camera.png" alt="">
+                    <div>
+                        <h3>Camera</h3>
+                        <p>128 mega-pixels</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/processor.png" alt="">
+                    <div>
+                        <h3>Processor</h3>
+                        <p>Snap-dragon octacore</p>
+                    </div>
+                </div>
+
+            </div>
+        </>
+        <!-- 3 -->
+        <div class="arrow">
+            <img src="images/up.png" alt="" id="upBtn">
+            <h3>Features</h3>
+            <img src="images/down.png" alt="" id="downBtn">
+        </div>
+    </div>
+    <!-- 4 -->
+    <script>
+        var upBtn = document.getElementById('upBtn');
+        var downBtn = document.getElementById('downBtn');
+        var circle = document.getElementById('circle');
+
+        var currentAngle = circle.style.transform;
+        var sumAngle;
+
+        upBtn.onclick = function(){
+            sumAngle = currentAngle + 'rotate(-90deg)';
+            circle.style.transform = sumAngle;
+            currentAngle = sumAngle;
+        }
+        downBtn.onclick = function(){
+            sumAngle = currentAngle + 'rotate(90deg)';
+            circle.style.transform = sumAngle;
+            currentAngle = sumAngle;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, pink, aqua);
+    position: relative;
+    overflow: hidden;
+}
+.nav-bar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 2% auto;
+    position: absolute;
+    z-index: 3;
+    
+
+}
+.nav-bar img{
+    width: 200px;
+}
+.nav-bar nav{
+    flex: 1;
+    text-align: right;
+}
+.nav-bar nav ul{
+    display: inline-block;
+}
+.nav-bar nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+.nav-bar nav ul li a{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+}
+/* 2  */
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+.circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.one{
+    top: 45%;
+    right: 3%;
+    /* transition: 1s; */
+}
+.two{
+    bottom: 3%;
+    left: 40%;
+    transform: rotate(90deg);
+    /* transition: 1s; */
+}
+.three{
+    top: 45%;
+    left: 3%;
+    transform: rotate(180deg);
+    /* transition: 1s; */
+}
+.four{
+    top: 3%;
+    left: 40%;
+    transform: rotate(270deg);
+    /* transition: 1s; */
+}
+#phone{
+    width: 200px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    z-index: 2;
+}
+/* 3 */
+.arrow{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 40%;
+    right: -30%;
+    text-align: center;
+}
+.arrow h3{
+    margin: 20% auto;
+}
+.arrow img{
+    cursor: pointer;
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid white;
+    border-left: 500px solid white;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+}
